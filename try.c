@@ -1,4 +1,3 @@
-/* This is just a try space for cheking the code */
 
 #include <stdio.h>
 int check(int* brr);
