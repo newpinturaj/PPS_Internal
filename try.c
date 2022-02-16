@@ -1,3 +1,5 @@
+/* function check space */
+
 
 #include <stdio.h>
 int check(int* brr);
