@@ -5,7 +5,6 @@
 void swap(int*x, int*y);
 int check(int*arr);
 
-
 int main()
 {
     int arr[N], i;
