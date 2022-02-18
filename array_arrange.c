@@ -1,19 +1,21 @@
 /* working code */
 
 #include <stdio.h>
-#define N 100
 void swap(int*x, int*y);
-int check(int*arr);
+int check(int*arr,int N);
 
 int main()
 {
+    int N;
+    printf("How many integers are there: ");
+    scanf("%d", &N);
     int arr[N], i;
     printf("Enter the integer: ");
     for (i = 0; i<N; i ++)
     {
         scanf("%d", &arr[i]);
     }
-    while(check(arr))
+    while(check(arr, N))
     {
         for(i = 0; i<N; i++)
         {
@@ -36,7 +38,7 @@ void swap(int*x, int*y)
     *x = *x^*y;
 }
 
-int check(int*arr)
+int check(int*arr,int N)
 {
     int found = 0;
     for(int i = 0; i<N; i++)
