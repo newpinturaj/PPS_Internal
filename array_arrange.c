@@ -1,5 +1,4 @@
 /* working code */
-/*  PROBLEM  ---- even number items are not arranged   ---------*/
 
 #include <stdio.h>
 void swap(int*x, int*y);
@@ -11,7 +10,7 @@ int main()
     printf("How many integers are there: ");
     scanf("%d", &N);
     int arr[N], i;
-    printf("Enter the integer: ");
+    printf("Enter the integers: ");
     for (i = 0; i<N; i ++)
     {
         scanf("%d", &arr[i]);
