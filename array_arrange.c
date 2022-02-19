@@ -1,4 +1,5 @@
 /* working code */
+/*  PROBLEM  ---- even number items are not arranged   ---------*/
 
 #include <stdio.h>
 void swap(int*x, int*y);
@@ -17,7 +18,7 @@ int main()
     }
     while(check(arr, N))
     {
-        for(i = 0; i<N; i++)
+        for(i = 0; i<(N-1); i++)
         {
             if(arr[i+1]<arr[i])
             swap(&arr[i+1], &arr[i]);
@@ -41,7 +42,7 @@ void swap(int*x, int*y)
 int check(int*arr,int N)
 {
     int found = 0;
-    for(int i = 0; i<N; i++)
+    for(int i = 0; i<(N-1); i++)
     {
         if(arr[i+1]<arr[i])
         {
